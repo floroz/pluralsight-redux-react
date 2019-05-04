@@ -86,7 +86,8 @@
 			"no-debugger": "off",
 			"no-console": "off",
 			"no-unused-vars": "warn",
-			"react/prop-types": "warn"
+			"react/prop-types": "warn",
+			"no-mixed-spaces-and-tabs": "off"
 		},
 		"settings": {
 			"react": {
