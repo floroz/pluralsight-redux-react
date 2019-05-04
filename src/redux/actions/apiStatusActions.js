@@ -6,6 +6,12 @@ export const beginApiCall = () => {
 	};
 };
 
+export const apiCallError = () => {
+	return {
+		type: actionTypes.API_CALL_ERROR
+	};
+};
+
 // export const endApiCalls = () => {
 // 	return {
 // 		type: actionTypes.END_API_CALL

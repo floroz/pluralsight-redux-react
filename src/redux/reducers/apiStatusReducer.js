@@ -8,7 +8,10 @@ function actionTypeEndsInSuccess(type) {
 export const apiStatusReducer = (state = initialState.asyncCalls, action) => {
 	if (action.type === actionTypes.BEGIN_API_CALL) {
 		return state + 1;
-	} else if (actionTypeEndsInSuccess(action.type)) {
+	} else if (
+		action.type === actionTypes.API_CALL_ERROR ||
+		actionTypeEndsInSuccess(action.type)
+	) {
 		return state - 1;
 	}
 	return state;
